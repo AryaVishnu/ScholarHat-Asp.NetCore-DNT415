@@ -1,0 +1,24 @@
+﻿@model PostViewModel
+@{
+    ViewData["Title"] = "Post";
+}
+
+<h1>Post</h1>
+
+<form>
+    
+    <h1>
+         @Model.Title    
+    </h1>
+     <div>
+        By: @Model.Author;
+    </div>
+    <p>
+        @Model.Body;
+    </p>
+</form>
+
+
+
+
+@*@await Component.InvokeAsync("Comment")*@
